@@ -93,7 +93,7 @@ __dev__       | `true` | If `false`, Composer commands are run with the `--no-de
 __verbosity__ | `1`   | The verbosity level. Could be `1`, `2`, or `3`.
 __quiet__     | `true` | Supress output with the `--quiet` flag
 __prefer_dist__ | `false` | If `true`, runs commands with `--prefer-dist` when applicable
-__prefer_source__ | `false` | If `true`, runs commands with `--prefer-dist` when applicable
+__prefer_source__ | `false` | If `true`, runs commands with `--prefer-source` when applicable
 __optimize_autoloader__ | `false` | If `true`, runs commands with `--optimize-autoloader` or `--optimize` when applicable
 __script__ | empty string | The script to run when called with the `:run_script` action.
 __user__ | `nil` | The user responible for the command (Passed to the `execute` resource internally)
