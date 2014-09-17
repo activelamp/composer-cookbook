@@ -57,7 +57,7 @@ class Chef
       end
 
       def no_scripts(arg=nil)
-        set_or_return(:script, arg, :kind_of => [TrueClass, FalseClass])
+        set_or_return(:no_scripts, arg, :kind_of => [TrueClass, FalseClass])
       end
 
       def prefer_dist(arg=nil)

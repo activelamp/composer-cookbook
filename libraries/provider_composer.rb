@@ -34,7 +34,7 @@ class Chef
         flags.push('--no-scripts') if @current_resource.no_scripts
         flags.push('--prefer-source') if @current_resource.prefer_source
         flags.push('--prefer-dist') if @current_resource.prefer_dist
-        flag.push('--optimize-autoloader') if @current_resource.optimize_autoloader
+        flags.push('--optimize-autoloader') if @current_resource.optimize_autoloader
 
         run_composer_command('update --no-progress', flags)
       end
