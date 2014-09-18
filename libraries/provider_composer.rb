@@ -12,6 +12,7 @@ class Chef
       end
 
       def action_download_phar
+        Chef::Log.info 'Downloading the Composer executable...'
         converge_by('Downloading Composer...') do
           execute = Chef::Resource::Execute.new('curl -sS https://getcomposer.org/installer | php', @run_context)
           execute.cwd(@current_resource.directory)
